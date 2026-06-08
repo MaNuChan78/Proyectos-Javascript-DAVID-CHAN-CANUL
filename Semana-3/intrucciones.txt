@@ -1,0 +1,17 @@
+/*
+Pagina 1
+agregar eventos para los otros botones de resta, multiplicación y division
+
+Pagina 2
+crear un archivo que se llame "metodos.html":
+ -contendra unicamente un input de tipo numero y un botones que calculen:
+    -numeros pares
+    -numeros impares
+    -numeros primos
+ -el resultado se muestre debajo del boton
+
+1 -> clic al boton = El numero 1 es impar y primos
+
+fecha de entrega: jueves 11 de junio hasta las 11:59pm
+
+*/
