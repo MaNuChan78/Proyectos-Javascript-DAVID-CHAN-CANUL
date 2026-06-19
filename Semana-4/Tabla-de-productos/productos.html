@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en" class="m-0 p-0 bg-slate-900 scrollbar-thumb-indigo-700 scrollbar-track-sky-600">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        table.table-zebra tbody tr:nth-child(odd) {
+            background-color: #27272a;
+        }
+        table.table-zebra tbody tr:nth-child(even) {
+            background-color: #18181b;
+        }
+    </style>
+</head>
+
+
+<body class="m-0 p-0 bg-slate-900">
+    <div class="overflow-x-auto container mx-auto px-4 my-8">
+
+    <h1 class="bg-linear-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text text-[35px] text-center font-serif font-bold uppercase pb-7">Lista de productos</h1>
+    <label for="filtro" class="text-zinc-100 font-semibold">Categorías:</label>
+
+    <select id="filtro" class="bg-zinc-800 text-white p-2 ml-5 mb-5 rounded cursor-pointer">
+        <option value="todos">Selecciona una categoría</option>
+        <option value="Electrónicos">Electrónicos</option>
+        <option value="Accesorios">Accesorios</option>
+        <option value="Muebles">Muebles</option>
+        <option value="Iluminación">Iluminación</option>
+        <option value="Almacenamiento">Almacenamiento</option>
+        <option value="Componentes">Componentes</option>
+        <option value="Redes">Redes</option>
+        <option value="Oficina">Oficina</option>
+        <option value="Ropa">Ropa</option>
+        <option value="Videojuegos">Videojuegos</option>
+        <option value="Hogar">Hogar</option>
+        <option value="Salud">Salud</option>
+        <option value="Herramientas">Herramientas</option>
+        <option value="Software">Software</option>
+    </select>
+
+    <table class="table table-zebra border border-sky-900">
+        <thead class="bg-zinc-900 text-zinc-100">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>Stock</th>
+                <th>Total en stock</th>
+            </tr>
+        </thead>
+        <tbody id="products">
+        </tbody>
+    </table>
+</div>
+
+    <script src="productos.js"></script>
+    <script src="productos_acciones.js"></script>
+
+
+
+
+</body>
+</html>
